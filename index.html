@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wanjiru Lucy Njeri — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root{
+      --bg:#0b0f12;
+      --card:#0f1720;
+      --muted:#9aa6b2;
+      --accent:#6ee7b7;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071017);color:#e6eef3}
+    .container{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:98px;height:98px;border-radius:14px;background:linear-gradient(135deg,#0f1b25, #11212b);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted);font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:26px}
+
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,12,0.6)}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+    .section-title h2{margin:0;font-size:18px}
+    .muted{color:var(--muted);font-size:13px}
+
+    /* Skills & badges */
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{padding:8px 12px;border-radius:999px;background:var(--glass);border:1px solid rgba(255,255,255,0.03);font-size:13px}
+
+    /* Projects */
+    .projects{display:grid;gap:12px}
+    .project{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.025)}
+    .project h3{margin:0 0 6px;font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+
+    /* Right column */
+    .contact-list{display:flex;flex-direction:column;gap:10px}
+    .contact-item{display:flex;flex-direction:column}
+    .badge{display:inline-block;padding:6px 10px;border-radius:8px;background:rgba(0,0,0,0.18);font-size:13px}
+
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr;}
+      header{gap:14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">WL</div>
+      <div>
+        <h1>Wanjiru Lucy Njeri</h1>
+        <p class="lead">I’m an enthusiastic Information Technology student passionate about web development and software design. I enjoy creating user-friendly digital solutions and continuously improving my technical skills.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <div class="section-title">
+            <h2>About</h2>
+            <span class="muted">Nairobi, Kenya</span>
+          </div>
+          <p class="muted">Bachelor of Science in Information Technology — Expected Graduation: 2026. Currently focused on full-stack web development, UI/UX fundamentals, and software engineering practices. Open to internships and collaboration on practical projects.</p>
+        </section>
+
+        <section class="card mt-16">
+          <div class="section-title">
+            <h2>Projects</h2>
+            <span class="muted">Selected work</span>
+          </div>
+          <div class="projects">
+            <article class="project">
+              <h3>ElderCare Management System</h3>
+              <p>A web-based application designed to assist elderly patients by simplifying medical tracking and communication with caregivers. Built with usability in mind and a clear role-based login interface.</p>
+            </article>
+
+            <article class="project">
+              <h3>Community Skill Exchange (Prototype)</h3>
+              <p>A platform to connect people who want to teach and learn skills locally. Features include user profiles, skill listings, and session scheduling.</p>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="card mt-16">
+          <div class="section-title">
+            <h2>Education</h2>
+            <span class="muted">Academic history</span>
+          </div>
+          <div class="flex-col-gap-8">
+            <div>
+              <strong>Bachelor of Science in Information Technology</strong>
+              <div class="muted">Expected Graduation: 2026</div>
+            </div>
+            <div>
+              <strong>Mugori Girls High School</strong>
+              <div class="muted">Completed: 2021</div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title"><h2>Skills</h2></div>
+          <div class="skills mt-10">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Java</span>
+            <span class="skill">Databases</span>
+            <span class="skill">Microsoft Office</span>
+            <span class="skill">Git</span>
+          </div>
+
+          <div class="mt-16">
+            <div class="section-title"><h2>Contact</h2></div>
+            <div class="contact-list">
+              <div class="contact-item"><span class="badge">Email</span><div class="muted mt-6">9016lucynjeri@gmail.com</div></div>
+              <div class="contact-item"><span class="badge">Phone</span><div class="muted mt-6">+254741363694</div></div>
+              <div class="contact-item"><span class="badge">Location</span><div class="muted mt-6">Nairobi, Kenya</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-16">
+          <div class="section-title"><h2>Availability</h2></div>
+          <p class="muted">Available for internships and attachments starting January 2026. Open to remote and Nairobi-based opportunities.</p>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      <div class="muted">© 2025 Wanjiru Lucy Njeri — Built with a dark professional theme. Edit the HTML to customize further.</div>
+    </footer>
+  </div>
+
+</body>
+</html>
